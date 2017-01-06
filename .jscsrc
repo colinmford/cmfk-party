@@ -1,0 +1,11 @@
+{
+    "preset": "airbnb",
+    "validateQuoteMarks": { "mark": "\"", "escape": true },
+    "requireSemicolons": false,
+    "requireSpacesInAnonymousFunctionExpression": {
+        "beforeOpeningCurlyBrace": true
+    },
+    "validateIndentation": 4,
+    "requireTrailingComma": false,
+    "requirePaddingNewLinesAfterBlocks": { "allExcept": ["singleLine"] }
+}
