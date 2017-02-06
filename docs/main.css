@@ -5986,12 +5986,18 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 @media print {
   .hidden-print {
     display: none !important; } }
-.full-wd {
-  width: 100%; }
+.left-col {
+  background-image: url(28736adb58cdf415692af1d5fda88224.jpg);
+  height: 100%;
+  position: fixed;
+  margin-left: -15px;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
-.main-content {
-  height: 95vh;
-  overflow-y: scroll; }
+.right-col {
+  width: 50%;
+  margin-left: 50%; }
 
-.nav {
-  height: 5vh; }
+.right-col.nav {
+  position: fixed; }

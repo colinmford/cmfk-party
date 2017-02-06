@@ -1,8 +1,18 @@
-.full-wd { width: 100% }
-.main-content {
-    height: 95vh;
-    overflow-y: scroll;
+.left-col {
+    background-image: url("img/cmfk.jpg");
+    height: 100%;
+    position: fixed;
+    margin-left: -15px;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.nav {
-    height: 5vh;
+
+.right-col {
+    width: 50%;
+    margin-left: 50%;
+}
+
+.right-col.nav {
+    position: fixed;
 }
