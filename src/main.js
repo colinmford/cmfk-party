@@ -1,6 +1,9 @@
 // require("normalize.css")
 // require("flexboxgrid")
-require("bootstrap/scss/bootstrap-flex.scss")
+require("jquery")
+require("tether")
+require("bootstrap/dist/js/bootstrap")
+require("bootstrap/scss/bootstrap.scss")
 require("./main.scss")
 
-console.log("hello")
+// console.log("hello")
