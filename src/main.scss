@@ -1,8 +1,44 @@
+@font-face {
+    font-family: 'Spot Mono';
+    src: url('font/spot-mono.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Krana Fat A';
+    src: url('font/krana-fat.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    font-family: "Spot Mono", monospace;
+    font-weight: 600;
+}
+
+.title {
+    font-family: "Krana Fat A";
+    font-weight: 600;
+    font-size: 70pt;
+    line-height: 0.9;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0.5em;
+    left: 0.5em;
+    right: 0.5em;
+}
+
+.top-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .left-col {
     background-image: url("img/cmfk.jpg");
     height: 100%;
     position: fixed;
-    margin-left: -15px;
     width: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,4 +51,8 @@
 
 .right-col.nav {
     position: fixed;
+}
+
+.main-content {
+    padding: 3em 2em;
 }
