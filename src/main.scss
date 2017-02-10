@@ -1,38 +1,69 @@
 @font-face {
     font-family: 'Spot Mono';
-    src: url('font/spot-mono.woff') format('woff');
-    font-weight: 600;
+    src: url('font/Spot-Light.woff') format('woff');
+    font-weight: 400;
     font-style: normal;
 }
-
-@font-face {
-    font-family: 'Krana Fat A';
-    src: url('font/krana-fat.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'Krana Fat A';
+//     src: url('font/krana-fat.woff') format('woff');
+//     font-weight: 600;
+//     font-style: normal;
+// }
 
 body {
     font-family: "Spot Mono", monospace;
-    font-weight: 600;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    -webkit-transition-property: color;
+    -moz-transition-property: color;
+    -o-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 200ms;
+    -moz-transition-duration: 200ms;
+    -o-transition-duration: 200ms;
+    transition-duration: 200ms;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+
+    &:link, &:visited{
+        color: #000;
+        text-decoration: underline;
+    }
+    &:hover, &:visited:hover {
+        color: #EA5A89;
+    }
 }
 
 .title {
-    font-family: "Krana Fat A";
-    font-weight: 600;
-    font-size: 70pt;
-    line-height: 0.9;
-    text-align: center;
-    text-transform: uppercase;
+    height: 50%;
     position: absolute;
-    bottom: 0.5em;
-    left: 0.5em;
-    right: 0.5em;
+    right: 0;
+    left: 0;
+    bottom: 0;
 }
 
 .top-container {
     margin-left: auto;
     margin-right: auto;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 200ms;
+    -moz-transition-duration: 200ms;
+    -o-transition-duration: 200ms;
+    transition-duration: 200ms;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
 }
 
 .left-col {
@@ -42,6 +73,7 @@ body {
     width: 50%;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 50% 20%;
 }
 
 .right-col {
@@ -51,8 +83,14 @@ body {
 
 .right-col.nav {
     position: fixed;
+    display: none;
 }
 
 .main-content {
     padding: 3em 2em;
+    text-align: center;
+}
+
+.save-the-date {
+    margin-bottom: 3em;
 }
