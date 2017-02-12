@@ -49,11 +49,5 @@ module.exports = {
     plugins: [
         new ExtractTextPlugin('[name].css'),
         new HtmlWebpackPlugin({template: "./src/index.html"}),
-        new webpack.ProvidePlugin({
-            jQuery: 'jquery',
-            $: 'jquery',
-            jquery: 'jquery',
-            Tether: 'tether'
-        })
     ]
 };
