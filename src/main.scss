@@ -46,6 +46,7 @@ a {
 .top-container {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 3em;
     -webkit-transition-property: all;
     -moz-transition-property: all;
     -o-transition-property: all;
@@ -67,6 +68,10 @@ a {
 
 .right-col.nav {
     display: none;
+}
+
+.cmfk-logo {
+    width: 3em;
 }
 
 $breakpoint-xs: 320px;
