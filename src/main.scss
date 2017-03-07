@@ -14,152 +14,29 @@
 body {
     font-family: "Spot Mono", monospace;
     font-weight: 400;
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 1.45;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
 
-a {
-    -webkit-transition-property: color;
-    -moz-transition-property: color;
-    -o-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 200ms;
-    -moz-transition-duration: 200ms;
-    -o-transition-duration: 200ms;
-    transition-duration: 200ms;
-    -webkit-transition-timing-function: ease-in-out;
-    -moz-transition-timing-function: ease-in-out;
-    -o-transition-timing-function: ease-in-out;
-    transition-timing-function: ease-in-out;
-
-    &:link, &:visited{
-        color: #000;
-        text-decoration: underline;
-    }
-    &:hover, &:visited:hover {
-        color: #EA5A89;
-    }
+table {
+    width: 600px;
 }
 
-.top-container {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 3em;
-    -webkit-transition-property: all;
-    -moz-transition-property: all;
-    -o-transition-property: all;
-    transition-property: all;
-    -webkit-transition-duration: 200ms;
-    -moz-transition-duration: 200ms;
-    -o-transition-duration: 200ms;
-    transition-duration: 200ms;
-    -webkit-transition-timing-function: ease-in-out;
-    -moz-transition-timing-function: ease-in-out;
-    -o-transition-timing-function: ease-in-out;
-    transition-timing-function: ease-in-out;
-}
-
-.main-content {
-    text-align: center;
-    padding: 0 1em 0;
-}
-
-.right-col.nav {
-    display: none;
-}
-
-.cmfk-logo {
-    width: 3em;
-}
-
-$breakpoint-xs: 320px;
-$breakpoint-sm: 576px;
-$breakpoint-md: 768px;
-$breakpoint-lg: 992px;
-$breakpoint-xl: 1200px;
-
-.title{
-    display: none;
-}
-
-.gradient-block {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+60,ffffff+100&0+60,1+100 */
-    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 60%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 60%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(255,255,255,0) 60%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-    width:100%;
-    height:100%;
-}
-.save-the-date {
-    margin-bottom: 1em;
-}
-
-.left-col, .right-col {
-    position: relative;
-    width: auto;
-    margin: 0 auto;
-}
-
-.left-col {
-    height: 15em;
-    background-image: url("img/cmfk.jpg");
+.postcard {
+    background-image: url("img/Postcard-Front.gif");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 20%;
+    height: 833px;
 }
 
-@media screen and (min-width: $breakpoint-sm) {
-    .left-col {
-        height: 14em;
-    }
+a {
+    color: #000;
+    text-decoration: underline;
 }
 
-
-@media screen and (min-width: $breakpoint-md) {
-    .gradient-block {
-        display: none;
-    }
-    .main-content{
-        padding: 3em 2em;
-    }
-
-    .title {
-        height: 50%;
-        position: absolute;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        display: block;
-    }
-
-    .left-col {
-        height: 100%;
-        position: fixed;
-        width: 50%;
-    }
-
-    .right-col {
-        width: 50%;
-        margin-left: 50%;
-    }
-
-    .right-col.nav {
-        position: fixed;
-    }
-
-}
-
-@media screen and (min-width: $breakpoint-lg) {
-    body {
-        font-size: 1.1em;
-    }
-}
-
-@media screen and (min-width: $breakpoint-xl) {
-    body {
-        font-size: 1.2em;
-    }
+.content {
+    padding-top: 1.6em;
+    text-align: center;
 }

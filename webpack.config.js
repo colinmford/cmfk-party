@@ -28,7 +28,7 @@ module.exports = {
                 test: /\.png$/,
                 loader: "url-loader?limit=100000"
             }, {
-                test: /\.jpg$/,
+                test: /\.(jpg|gif)$/,
                 loader: "file-loader"
             }, {
                 test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
