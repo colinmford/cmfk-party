@@ -43,6 +43,10 @@ a {
     }
 }
 
+.nav-link {
+    display: inline-block;
+}
+
 .top-container {
     margin-left: auto;
     margin-right: auto;
@@ -62,12 +66,30 @@ a {
 }
 
 .main-content {
-    text-align: center;
     padding: 0 1em 0;
 }
 
 .right-col.nav {
-    display: none;
+    background-color: #fff;
+    z-index: 999;
+}
+
+section {
+    &:first-child{
+        border: none;
+        text-align: center;
+    }
+    border-top: 1px solid #eee;
+    padding-top: 1em;
+    h2 {
+        font-size: 1.4em;
+        margin-bottom: 1.2em;
+    }
+}
+
+.anchor{
+    height: 4em;
+    display: block;
 }
 
 .cmfk-logo {
