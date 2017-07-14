@@ -1,19 +1,36 @@
 @font-face {
-    font-family: 'Spot Mono';
-    src: url('font/Spot-Light.woff') format('woff');
-    font-weight: 400;
+    font-family: 'Saol Display';
+    src: url('font/Saol-display-light.woff') format('woff');
+    font-weight: 100;
     font-style: normal;
 }
-// @font-face {
-//     font-family: 'Krana Fat A';
-//     src: url('font/krana-fat.woff') format('woff');
-//     font-weight: 600;
-//     font-style: normal;
-// }
+@font-face {
+    font-family: 'Saol Display';
+    src: url('font/Saol-display-light-italic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+// temp
+
+@font-face {
+    font-family: 'Ringside Extra Wide A';
+    src: local('RingsideExtraWide-Light');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ringside Extra Wide A';
+    src: local('RingsideExtraWide-LightItalic');
+    font-weight: 200;
+    font-style: italic;
+}
+
+// /temp
 
 body {
-    font-family: "Spot Mono", monospace;
-    font-weight: 400;
+    font-family: "Ringside Extra Wide A", sans-serif;
+    font-weight: 200;
     font-size: 1em;
     line-height: 1.45;
     text-rendering: optimizeLegibility;
