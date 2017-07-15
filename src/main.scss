@@ -11,26 +11,10 @@
     font-style: italic;
 }
 
-// temp
-
-@font-face {
-    font-family: 'Ringside Extra Wide A';
-    src: local('RingsideExtraWide-Light');
-    font-weight: 200;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Ringside Extra Wide A';
-    src: local('RingsideExtraWide-LightItalic');
-    font-weight: 200;
-    font-style: italic;
-}
-
-// /temp
-
 body {
-    font-family: "Ringside Extra Wide A", sans-serif;
-    font-weight: 200;
+    font-family: "Ringside Extra Wide SSm A", "Ringside Extra Wide SSm B", sans-serif;
+    font-style: normal;
+    font-weight: 300;
     font-size: 1em;
     line-height: 1.45;
     text-rendering: optimizeLegibility;

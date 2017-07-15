@@ -4,3 +4,5 @@
 .DS_Store
 /src/font/*
 /node_modules/*
+yarn.lock
+.yarnclean
