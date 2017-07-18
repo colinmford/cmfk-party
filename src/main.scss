@@ -19,9 +19,15 @@ body {
     line-height: 1.45;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
+    background-color: #2b303b;
+    color: #fff;
 }
 
-
+.container-fluid {
+    border: 1px solid #fff;
+    margin: 3em;
+    padding: 3em;
+}
 
 //
 // a {
