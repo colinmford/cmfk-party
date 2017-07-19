@@ -11,6 +11,28 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: 'Ringside Extra Wide SSm A';
+    src: local("Ringside SSm Extra Wide Light"),
+         local("RingsideSSmExtraWide-Light");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ringside Extra Wide SSm A';
+    src: local("Ringside SSm Extra Wide Light Italic"),
+         local("RingsideSSmExtraWide-LightItal");
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Ringside Extra Wide SSm A';
+    src: local("Ringside SSm Extra Wide Med"),
+         local("RingsideSSmExtraWide-Med");
+    font-weight: 500;
+    font-style: normal;
+}
+
 body {
     font-family: "Ringside Extra Wide SSm A", "Ringside Extra Wide SSm B", sans-serif;
     font-style: normal;
@@ -21,6 +43,10 @@ body {
     -webkit-font-smoothing: antialiased;
     background-color: #2b303b;
     color: #fff;
+}
+
+strong {
+    font-weight: 500;
 }
 
 .container-fluid {
