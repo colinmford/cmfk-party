@@ -70,7 +70,7 @@ body {
 a {
     font-weight: 500;
     text-decoration: none;
-    &:link, &:visited {
+    &:link, &:visited, &:active {
         color: #fff;
         background-color: none;
         border-bottom: 3px #fff solid;
@@ -95,7 +95,7 @@ $breakpoint-xl: 1200px;
 
 .nav {
     max-width: 60rem;
-    margin: 0 auto;
+    margin: 2.5rem auto;
     text-transform: uppercase;
     a {
         font-weight: 300;
@@ -121,11 +121,9 @@ h2 {
 
 }
 
-
-
-// h1+h2{
-//     margin-top: 0;
-// }
+.container-fluid {
+    padding: 0;
+}
 
 .event-date {
     font-weight: 300;
@@ -133,13 +131,22 @@ h2 {
 }
 
 section {
-    margin: 3rem 0;
+    padding: 3rem 3rem 0;
+}
+
+#footer {
+    padding: 3rem 0 0;
+    .waves {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 1.5px;
+    }
+    .footer-text {
+        fill: #fff;
+    }
 }
 
 @media screen and (min-width: $breakpoint-sm) {
-    .container-fluid {
-        padding: 2rem 3rem 3rem;
-    }
     .nav {
         margin-bottom: 2rem;
     }
@@ -153,10 +160,15 @@ section {
     .container-fluid {
         border: 1px solid #fff;
         margin: 3rem;
-        padding: 2.5rem 3rem 3rem;
     }
     .nav {
         margin-bottom: 3rem;
+    }
+
+    #footer {
+        .waves {
+            stroke-width: 1px;
+        }
     }
 }
 

@@ -6048,7 +6048,7 @@ body {
 a {
   font-weight: 500;
   text-decoration: none; }
-  a:link, a:visited {
+  a:link, a:visited, a:active {
     color: #fff;
     background-color: none;
     border-bottom: 3px #fff solid; }
@@ -6063,7 +6063,7 @@ strong {
 
 .nav {
   max-width: 60rem;
-  margin: 0 auto;
+  margin: 2.5rem auto;
   text-transform: uppercase; }
   .nav a {
     font-weight: 300;
@@ -6083,16 +6083,26 @@ h2 {
   text-align: center;
   line-height: 1.8; }
 
+.container-fluid {
+  padding: 0; }
+
 .event-date {
   font-weight: 300;
   font-size: 0.83em; }
 
 section {
-  margin: 3rem 0; }
+  padding: 3rem 3rem 0; }
+
+#footer {
+  padding: 3rem 0 0; }
+  #footer .waves {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 1.5px; }
+  #footer .footer-text {
+    fill: #fff; }
 
 @media screen and (min-width: 576px) {
-  .container-fluid {
-    padding: 2rem 3rem 3rem; }
   .nav {
     margin-bottom: 2rem; } }
 
@@ -6101,10 +6111,11 @@ section {
     font-family: "Ringside Extra Wide SSm A", "Ringside Extra Wide SSm B", sans-serif; }
   .container-fluid {
     border: 1px solid #fff;
-    margin: 3rem;
-    padding: 2.5rem 3rem 3rem; }
+    margin: 3rem; }
   .nav {
-    margin-bottom: 3rem; } }
+    margin-bottom: 3rem; }
+  #footer .waves {
+    stroke-width: 1px; } }
 
 @media screen and (min-width: 992px) {
   body {
