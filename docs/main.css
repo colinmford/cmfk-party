@@ -6115,7 +6115,9 @@ section {
 
 #top {
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 5rem; }
   #top svg {
     margin-bottom: 3rem; }
 
@@ -6144,7 +6146,8 @@ section {
     width: 66%;
     text-align: right; }
   #top {
-    text-align: left; }
+    text-align: left;
+    font-size: inherit; }
     #top svg {
       margin-bottom: 0; } }
 
@@ -6164,5 +6167,13 @@ section {
     display: none; }
   .logo-xl {
     display: flex; }
-  #top svg {
-    margin-bottom: 2rem; } }
+  #top {
+    margin-bottom: 8rem; }
+    #top svg {
+      margin-bottom: 2rem; }
+    #top .text-section {
+      margin-top: 5rem;
+      display: flex;
+      justify-content: space-between; }
+  .date-line, .location-line {
+    width: auto; } }

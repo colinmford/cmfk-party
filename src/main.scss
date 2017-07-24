@@ -162,6 +162,8 @@ section {
 #top {
     text-transform: uppercase;
     text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 5rem;
     svg {
         margin-bottom: 3rem;
     }
@@ -209,6 +211,7 @@ section {
     }
     #top {
         text-align: left;
+        font-size: inherit;
         svg {
             margin-bottom: 0;
         }
@@ -226,6 +229,7 @@ section {
     .embed-responsive {
         margin: auto;
     }
+
 }
 
 @media screen and (min-width: $breakpoint-xl) {
@@ -239,7 +243,18 @@ section {
     .logo-xl {
         display: flex;
     }
-    #top svg {
-        margin-bottom: 2rem;
+    #top {
+        margin-bottom: 8rem;
+        svg {
+            margin-bottom: 2rem;
+        }
+        .text-section {
+            margin-top: 5rem;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .date-line, .location-line {
+        width: auto;
     }
 }
