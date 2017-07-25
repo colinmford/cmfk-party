@@ -5,52 +5,52 @@
     font-style: italic;
 }
 
-@font-face {
-    font-family: 'Ringside Extra Wide SSm A';
-    src: local("Ringside SSm Extra Wide Light"),
-         local("RingsideSSmExtraWide-Light");
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Ringside Extra Wide SSm A';
-    src: local("Ringside SSm Extra Wide Light Italic"),
-         local("RingsideSSmExtraWide-LightItal");
-    font-weight: 300;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Ringside Extra Wide SSm A';
-    src: local("Ringside SSm Extra Wide Med"),
-         local("RingsideSSmExtraWide-Med");
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Ringside Wide SSm A';
-    src: local("Ringside SSm Wide Light"),
-         local("RingsideSSmWide-Light");
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Ringside Wide SSm A';
-    src: local("Ringside SSm Wide Light Italic"),
-         local("RingsideSSmWide-LightItal");
-    font-weight: 300;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Ringside Wide SSm A';
-    src: local("Ringside SSm Wide Med"),
-         local("RingsideSSmWide-Med");
-    font-weight: 500;
-    font-style: normal;
-}
+// @font-face {
+//     font-family: 'Ringside Extra Wide SSm A';
+//     src: local("Ringside SSm Extra Wide Light"),
+//          local("RingsideSSmExtraWide-Light");
+//     font-weight: 300;
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: 'Ringside Extra Wide SSm A';
+//     src: local("Ringside SSm Extra Wide Light Italic"),
+//          local("RingsideSSmExtraWide-LightItal");
+//     font-weight: 300;
+//     font-style: italic;
+// }
+// @font-face {
+//     font-family: 'Ringside Extra Wide SSm A';
+//     src: local("Ringside SSm Extra Wide Med"),
+//          local("RingsideSSmExtraWide-Med");
+//     font-weight: 500;
+//     font-style: normal;
+// }
+//
+// @font-face {
+//     font-family: 'Ringside Wide SSm A';
+//     src: local("Ringside SSm Wide Light"),
+//          local("RingsideSSmWide-Light");
+//     font-weight: 300;
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: 'Ringside Wide SSm A';
+//     src: local("Ringside SSm Wide Light Italic"),
+//          local("RingsideSSmWide-LightItal");
+//     font-weight: 300;
+//     font-style: italic;
+// }
+// @font-face {
+//     font-family: 'Ringside Wide SSm A';
+//     src: local("Ringside SSm Wide Med"),
+//          local("RingsideSSmWide-Med");
+//     font-weight: 500;
+//     font-style: normal;
+// }
 
 body {
-    font-family: "Ringside Wide SSm A", "Ringside Wide SSm B", sans-serif;
+    font-family: "Ringside Extra Wide SSm A", "Ringside Extra Wide SSm B", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 1em;
@@ -183,9 +183,9 @@ section {
 
 
 @media screen and (min-width: $breakpoint-md) {
-    body {
-        font-family: "Ringside Extra Wide SSm A", "Ringside Extra Wide SSm B", sans-serif;
-    }
+    // body {
+    //     font-family: "Ringside Extra Wide SSm A", "Ringside Extra Wide SSm B", sans-serif;
+    // }
     .container-fluid {
         border: 1px solid #fff;
         margin: 3rem;
