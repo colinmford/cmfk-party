@@ -1,99 +1,84 @@
 @font-face {
-    font-family: 'Spot Mono';
-    src: url('font/Spot-Light.woff') format('woff');
-    font-weight: 400;
+    font-family: 'Saol Display';
+    src: url('font/SaolDisplay-LightItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Ringside Extra Wide SSm A';
+    src: local("Ringside SSm Extra Wide Light"),
+         local("RingsideSSmExtraWide-Light");
+    font-weight: 300;
     font-style: normal;
 }
-// @font-face {
-//     font-family: 'Krana Fat A';
-//     src: url('font/krana-fat.woff') format('woff');
-//     font-weight: 600;
-//     font-style: normal;
-// }
+@font-face {
+    font-family: 'Ringside Extra Wide SSm A';
+    src: local("Ringside SSm Extra Wide Light Italic"),
+         local("RingsideSSmExtraWide-LightItal");
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Ringside Extra Wide SSm A';
+    src: local("Ringside SSm Extra Wide Med"),
+         local("RingsideSSmExtraWide-Med");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ringside Wide SSm A';
+    src: local("Ringside SSm Wide Light"),
+         local("RingsideSSmWide-Light");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ringside Wide SSm A';
+    src: local("Ringside SSm Wide Light Italic"),
+         local("RingsideSSmWide-LightItal");
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Ringside Wide SSm A';
+    src: local("Ringside SSm Wide Med"),
+         local("RingsideSSmWide-Med");
+    font-weight: 500;
+    font-style: normal;
+}
 
 body {
-    font-family: "Spot Mono", monospace;
-    font-weight: 400;
+    font-family: "Ringside Wide SSm A", "Ringside Wide SSm B", sans-serif;
+    font-style: normal;
+    font-weight: 300;
     font-size: 1em;
-    line-height: 1.45;
+    line-height: 1.65;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
+    background-color: #09182d;
+    color: #fff;
 }
 
 a {
-    -webkit-transition-property: color;
-    -moz-transition-property: color;
-    -o-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 200ms;
-    -moz-transition-duration: 200ms;
-    -o-transition-duration: 200ms;
-    transition-duration: 200ms;
-    -webkit-transition-timing-function: ease-in-out;
-    -moz-transition-timing-function: ease-in-out;
-    -o-transition-timing-function: ease-in-out;
-    transition-timing-function: ease-in-out;
-
-    &:link, &:visited{
-        color: #000;
-        text-decoration: underline;
+    font-weight: 500;
+    text-decoration: none;
+    &:link, &:visited, &:active {
+        color: #fff;
+        background-color: none;
+        border-bottom: 3px #fff solid;
     }
-    &:hover, &:visited:hover {
-        color: #EA5A89;
+    &:hover, &:hover:visited, &:visited:hover {
+        border-bottom: none;
+        background-color: #fff;
+        color: #09182d;
+        text-decoration: none;
     }
 }
 
-.nav-link {
-    display: inline-block;
-}
-
-.top-container {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 3em;
-    -webkit-transition-property: all;
-    -moz-transition-property: all;
-    -o-transition-property: all;
-    transition-property: all;
-    -webkit-transition-duration: 200ms;
-    -moz-transition-duration: 200ms;
-    -o-transition-duration: 200ms;
-    transition-duration: 200ms;
-    -webkit-transition-timing-function: ease-in-out;
-    -moz-transition-timing-function: ease-in-out;
-    -o-transition-timing-function: ease-in-out;
-    transition-timing-function: ease-in-out;
-}
-
-.main-content {
-    padding: 0 1em 0;
-}
-
-.right-col.nav {
-    background-color: #fff;
-    z-index: 999;
-}
-
-section {
-    &:first-child{
-        border: none;
-        text-align: center;
-    }
-    border-top: 1px solid #eee;
-    padding-top: 1em;
-    h2 {
-        font-size: 1.4em;
-        margin-bottom: 1.2em;
-    }
-}
-
-.anchor{
-    height: 4em;
-    display: block;
-}
-
-.cmfk-logo {
-    width: 3em;
+strong {
+    font-weight: 500;
 }
 
 $breakpoint-xs: 320px;
@@ -102,86 +87,179 @@ $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 
-.title{
+.nav {
+    max-width: 60rem;
+    margin: 2.5rem auto;
+    text-transform: uppercase;
+    a {
+        font-weight: 300;
+        border-bottom: none;
+    }
+}
+
+h1 {
+    font-family: 'Saol Display', serif;
+    font-style: italic;
+    margin: 0 auto 2rem;
+    text-align: center;
+    font-size: 4.5em;
+}
+
+h2 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin: 2rem 0;
+    text-align: center;
+    line-height: 1.8;
+
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.event-date {
+    font-weight: 300;
+    font-size: 0.83em;
+}
+
+section {
+    padding: 5rem 3rem 0;
+}
+
+#footer, #divider {
+    padding: 3rem 0 0;
+    .waves {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 1.5px;
+    }
+    .footer-text {
+        fill: #fff;
+    }
+}
+
+.embed-responsive {
+    height: 40rem;
+    margin: 2rem auto;
+}
+
+.break-before {
+    -webkit-column-break-before:always;
+    column-break-before:always;
+}
+
+.logo-md, .logo-xl {
     display: none;
 }
 
-.gradient-block {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+60,ffffff+100&0+60,1+100 */
-    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 60%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 60%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(255,255,255,0) 60%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-    width:100%;
-    height:100%;
-}
-.save-the-date {
-    margin-bottom: 1em;
+#top {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5rem;
+    svg {
+        margin-bottom: 3rem;
+    }
 }
 
-.left-col, .right-col {
-    position: relative;
-    width: auto;
-    margin: 0 auto;
+#events {
+    .event + .event {
+        margin-top:5rem;
+    }
 }
 
-.left-col {
-    height: 15em;
-    background-image: url("img/cmfk.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 20%;
+#rsvp {
+    text-align: center;
+    font-size: 1.1em;
+    padding-top: 0px;
+    padding-bottom: 5rem;
 }
 
 @media screen and (min-width: $breakpoint-sm) {
-    .left-col {
-        height: 14em;
+    .nav {
+        margin-bottom: 2rem;
     }
 }
 
 
 @media screen and (min-width: $breakpoint-md) {
-    .gradient-block {
+    body {
+        font-family: "Ringside Extra Wide SSm A", "Ringside Extra Wide SSm B", sans-serif;
+    }
+    .container-fluid {
+        border: 1px solid #fff;
+        margin: 3rem;
+    }
+    .nav {
+        margin-bottom: 3rem;
+    }
+
+    #footer {
+        .waves {
+            stroke-width: 1px;
+        }
+    }
+
+    .logo-md {
+        display: flex;
+    }
+    .logo-sm, .logo-xl {
         display: none;
     }
-    .main-content{
-        padding: 3em 2em;
-    }
 
-    .title {
-        height: 50%;
-        position: absolute;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        display: block;
+    .date-line {
+        width: 45%;
+        text-align: right;
     }
-
-    .left-col {
-        height: 100%;
-        position: fixed;
-        width: 50%;
+    .location-line {
+        width: 66%;
+        text-align: right;
     }
-
-    .right-col {
-        width: 50%;
-        margin-left: 50%;
+    #top {
+        text-align: left;
+        font-size: inherit;
+        svg {
+            margin-bottom: 0;
+        }
     }
-
-    .right-col.nav {
-        position: fixed;
-    }
-
 }
 
 @media screen and (min-width: $breakpoint-lg) {
     body {
         font-size: 1.1em;
     }
+    .l-cols-2 {
+        column-count: 2;
+        column-gap: 2em;
+    }
+    .embed-responsive {
+        margin: auto;
+    }
+
 }
 
 @media screen and (min-width: $breakpoint-xl) {
     body {
         font-size: 1.2em;
+    }
+
+    .logo-md, .logo-sm {
+        display: none;
+    }
+    .logo-xl {
+        display: flex;
+    }
+    #top {
+        svg {
+            margin-bottom: 2rem;
+        }
+        .text-section {
+            margin-top: 5rem;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .date-line, .location-line {
+        width: auto;
     }
 }
