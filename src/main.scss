@@ -1,12 +1,6 @@
 @font-face {
     font-family: 'Saol Display';
-    src: url('font/Saol-display-light.woff') format('woff');
-    font-weight: 100;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Saol Display';
-    src: url('font/Saol-display-light-italic.woff') format('woff');
+    src: url('font/SaolDisplay-LightItalic.woff') format('woff');
     font-weight: 100;
     font-style: italic;
 }
@@ -59,7 +53,7 @@ body {
     font-family: "Ringside Wide SSm A", "Ringside Wide SSm B", sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 0.95em;
+    font-size: 1em;
     line-height: 1.65;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -106,7 +100,7 @@ $breakpoint-xl: 1200px;
 h1 {
     font-family: 'Saol Display', serif;
     font-style: italic;
-    margin: 0 auto 1rem;
+    margin: 0 auto 2rem;
     text-align: center;
     font-size: 4.5em;
 }
@@ -130,10 +124,10 @@ h2 {
 }
 
 section {
-    padding: 3rem 3rem 0;
+    padding: 5rem 3rem 0;
 }
 
-#footer {
+#footer, #divider {
     padding: 3rem 0 0;
     .waves {
         fill: none;
@@ -162,11 +156,23 @@ section {
 #top {
     text-transform: uppercase;
     text-align: center;
-    font-size: 1.2em;
     margin-bottom: 5rem;
     svg {
         margin-bottom: 3rem;
     }
+}
+
+#events {
+    .event + .event {
+        margin-top:5rem;
+    }
+}
+
+#rsvp {
+    text-align: center;
+    font-size: 1.1em;
+    padding-top: 0px;
+    padding-bottom: 5rem;
 }
 
 @media screen and (min-width: $breakpoint-sm) {
@@ -244,7 +250,6 @@ section {
         display: flex;
     }
     #top {
-        margin-bottom: 8rem;
         svg {
             margin-bottom: 2rem;
         }
