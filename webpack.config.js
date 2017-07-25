@@ -66,13 +66,24 @@ module.exports = {
     plugins: [
         new ExtractTextPlugin('[name].css'),
         // new HtmlWebpackPlugin({template: "./src/index.html"}),
-        // new PurifyCSSPlugin({
-        //     // Give paths to parse for rules. These should be absolute!
-        //     paths: glob.sync(path.join(__dirname, 'docs/*.html')),
-        //     minimize: true,
-        //     purifyOptions: {
-        //         info: true
-        //     }
-        // }),
+        new PurifyCSSPlugin({
+            // Give paths to parse for rules. These should be absolute!
+            paths: glob.sync(path.join(__dirname, 'src/*.html')),
+            minimize: true,
+            purifyOptions: {
+                whitelist: [
+                    'container-fluid',
+                    'nav',
+                    'justify-content-around',
+                    'flex-column',
+                    'flex-sm-row',
+                    'hidden-sm-down',
+                    'flex-sm-fill',
+                    'text-center',
+                    'nav-link',
+                    'embed-responsive',
+                    'embed-responsive-item']
+            }
+        }),
     ]
 };
