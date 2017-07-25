@@ -52,27 +52,27 @@ module.exports = {
             }
         ]
     },
-    // htmlLoader: {
-    //     minimize: true,
-    //     collapseBooleanAttributes: true,
-    //     collapseWhitespace: true,
-    //     removeAttributeQuotes: true,
-    //     removeComments: true,
-    //     removeEmptyAttributes: true,
-    //     removeRedundantAttributes: false,
-    //     removeScriptTypeAttributes: true,
-    //     removeStyleTypeAttributes: true
-    // },
+    htmlLoader: {
+        minimize: true,
+        collapseBooleanAttributes: true,
+        collapseWhitespace: true,
+        removeAttributeQuotes: true,
+        removeComments: true,
+        removeEmptyAttributes: true,
+        removeRedundantAttributes: false,
+        removeScriptTypeAttributes: true,
+        removeStyleTypeAttributes: true
+    },
     plugins: [
         new ExtractTextPlugin('[name].css'),
         // new HtmlWebpackPlugin({template: "./src/index.html"}),
-        new PurifyCSSPlugin({
-            // Give paths to parse for rules. These should be absolute!
-            paths: glob.sync(path.join(__dirname, 'docs/*.html')),
-            minimize: true,
-            purifyOptions: {
-                info: true
-            }
-        }),
+        // new PurifyCSSPlugin({
+        //     // Give paths to parse for rules. These should be absolute!
+        //     paths: glob.sync(path.join(__dirname, 'docs/*.html')),
+        //     minimize: true,
+        //     purifyOptions: {
+        //         info: true
+        //     }
+        // }),
     ]
 };
