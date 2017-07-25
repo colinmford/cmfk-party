@@ -52,17 +52,17 @@ module.exports = {
             }
         ]
     },
-    htmlLoader: {
-        minimize: true,
-        collapseBooleanAttributes: true,
-        collapseWhitespace: true,
-        removeAttributeQuotes: true,
-        removeComments: true,
-        removeEmptyAttributes: true,
-        removeRedundantAttributes: false,
-        removeScriptTypeAttributes: true,
-        removeStyleTypeAttributes: true
-    },
+    // htmlLoader: {
+    //     minimize: true,
+    //     collapseBooleanAttributes: true,
+    //     collapseWhitespace: true,
+    //     removeAttributeQuotes: true,
+    //     removeComments: true,
+    //     removeEmptyAttributes: true,
+    //     removeRedundantAttributes: false,
+    //     removeScriptTypeAttributes: true,
+    //     removeStyleTypeAttributes: true
+    // },
     plugins: [
         new ExtractTextPlugin('[name].css'),
         // new HtmlWebpackPlugin({template: "./src/index.html"}),
