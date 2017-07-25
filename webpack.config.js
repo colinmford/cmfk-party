@@ -72,17 +72,18 @@ module.exports = {
             minimize: true,
             purifyOptions: {
                 whitelist: [
-                    'container-fluid',
-                    'nav',
-                    'justify-content-around',
-                    'flex-column',
-                    'flex-sm-row',
-                    'hidden-sm-down',
-                    'flex-sm-fill',
-                    'text-center',
-                    'nav-link',
-                    'embed-responsive',
-                    'embed-responsive-item']
+                    '*container-fluid*',
+                    '*nav*',
+                    '*justify-content-around*',
+                    '*flex-column*',
+                    '*flex-sm-row*',
+                    '*hidden-sm-down*',
+                    '*flex-sm-fill*',
+                    '*text-center*',
+                    '*nav-link*',
+                    '*embed-responsive*',
+                    '*embed-responsive-item*'
+                ]
             }
         }),
     ]
