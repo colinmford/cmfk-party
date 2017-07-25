@@ -130,7 +130,7 @@ h2 {
 }
 
 section {
-    padding: 5rem 3rem 0;
+    padding: 5rem 1.1rem 0;
 }
 
 #footer, #divider {
@@ -204,6 +204,10 @@ section {
         .waves {
             stroke-width: 1px;
         }
+    }
+
+    section {
+        padding: 5rem 3rem 0;
     }
 
     .logo-md {
